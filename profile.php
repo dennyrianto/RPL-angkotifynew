@@ -28,7 +28,7 @@ $data = query("SELECT * FROM pengguna WHERE Email_Pengguna = '$email'")[0];
       <nav>
         <ul>
           <li><a href="landing-page.php">Home</a></li>
-          <li><a href="lokasi-angkot.html">Lokasi</a></li>
+          <li><a href="lokasi-angkot.html">Pesan Sekarang</a></li>
           <li><a href="profile.php">Profile</a></li>
           <li><a href="help-page.html">Help</a></li>
           
