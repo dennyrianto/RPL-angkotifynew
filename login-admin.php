@@ -8,7 +8,7 @@ if(isset($_POST["submit"])) {
   } catch (Throwable $th) {
     echo "ERROR:".$th;
   }
-
+  var_dump($_POST);
 }
 ?>
 <!DOCTYPE html>
@@ -33,16 +33,18 @@ if(isset($_POST["submit"])) {
                         <img src="img/logoAngkotify.png" style="margin-bottom: 50px">
 
                         <!-- Form buat input data dari admin -->
-                        <form action="" method="post">
+                        <form action="" methode="post">
                           <div class="form-outline form-white mb-4">
-                            <input type="text" name="input-username" id="Username" name="input-username" class="form-control form-control-lg" placeholder="Username" />
+                            <input type="id" name="input-id" id="ID_Admin" class="form-control form-control-lg" placeholder="ID" />
                           </div>
             
+
                           <div class="form-outline form-white mb-4">
-                            <input type="password" name="input-password" id="Pw_Admin" class="form-control form-control-lg" placeholder="Password" />
+                            <input type="password" name="input-password" id="typePasswordX" class="form-control form-control-lg" placeholder="password" />
                           </div>
             
-                          <button class="btn btn-outline-light btn-lg px-5" type="submit" name="submit" style="background-color: #418E02;">Login</button>
+                          <button class="btn btn-outline-light btn-lg px-5" type="button" onclick="window.location.href='admin-page.php'" style="background-color: #418E02;">Login</button>
+
                         </form>
                       </div>
           
