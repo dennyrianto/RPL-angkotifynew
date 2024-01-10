@@ -33,13 +33,13 @@ if(isset($_POST["submit"])) {
                         <img src="img/logoAngkotify.png" style="margin-bottom: 50px">
 
                         <!-- Form buat input data dari admin -->
-                        <form action="" methode="post">
+                        <form action="" method="post">
                           <div class="form-outline form-white mb-4">
-                            <input type="id" name="input-id" id="ID_Admin" name="input-id" class="form-control form-control-lg" placeholder="ID" />
+                            <input type="text" name="input-username" id="Username" name="input-username" class="form-control form-control-lg" placeholder="Username" />
                           </div>
             
                           <div class="form-outline form-white mb-4">
-                            <input type="password" name="input-password" id="typePasswordX" class="form-control form-control-lg" placeholder="password" />
+                            <input type="password" name="input-password" id="Pw_Admin" class="form-control form-control-lg" placeholder="Password" />
                           </div>
             
                           <button class="btn btn-outline-light btn-lg px-5" type="submit" name="submit" style="background-color: #418E02;">Login</button>

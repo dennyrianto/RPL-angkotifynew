@@ -35,7 +35,7 @@ if(isset($_POST["submit"])) {
                       <!-- Form buat input data dari supir -->
                       <form action="" method="post">
                         <div class="form-outline form-white mb-4">
-                          <input type="text" name="input-nama" id="Nama_Supir" class="form-control form-control-lg" placeholder="Nama" />
+                          <input type="text" name="input-email" id="Nama_Supir" class="form-control form-control-lg" placeholder="Nama" />
                         </div>
           
                         <div class="form-outline form-white mb-4">

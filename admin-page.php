@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-if (!isset($_SESSION["login"]) && !isset($_SESSION["input-id"])){
+if (!isset($_SESSION["login"]) && !isset($_SESSION["input-username"])){
   header("Location: pilih-login.html");
 }
 ?>

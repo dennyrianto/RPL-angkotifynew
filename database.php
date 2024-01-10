@@ -120,19 +120,19 @@ function loginPengguna($data) {
 //login admin
 function loginadmin($data) {
     global $conn;
-    $id = $data["input-id"];
+    $username = $data["input-username"];
     $password = $data["input-password"];
     
-    $statement = $conn->prepare("SELECT password FROM admin WHERE ID_Admin = ?");
-    $statement->bind_param("s", $id);
+    $statement = $conn->prepare("SELECT Pw_Admin FROM admin WHERE Username = ?");
+    $statement->bind_param("s", $username);
     if(!$statement->execute()) {
         throw new Exception("ERROR". $statement->error);
     }
     $result = $statement->get_result();
     $result = $result->fetch_assoc();
-    if(password_verify($password, $result["password"])) {
+    if(password_verify($password, $result["Pw_Admin"])) {
         $_SESSION["login"] =  true;
-        $_SESSION["input-id"] = $id;
+        $_SESSION["input-username"] = $username;
         header("Location: admin-page.php");
     } else {
         echo "Password Salah"; }
