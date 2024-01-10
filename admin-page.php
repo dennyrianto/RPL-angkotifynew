@@ -30,8 +30,8 @@ if (!isset($_SESSION["login"]) && !isset($_SESSION["input-username"])){
             <div>
                 <h2>Halaman Admin</h2>
                 <p>Akses ke data penumpang dan data pengemudi</p>
-                <a href="admin-data-pengguna.html"><button class="bt-datapenumpang">Data Penumpang</button></a>
-                <a href="admin-data-supir.html"><button class="bt-datapengemudi">Data Pengemudi</button></a>
+                <a href="admin-data-pengguna.php"><button class="bt-datapenumpang">Data Penumpang</button></a>
+                <a href="admin-data-supir.php"><button class="bt-datapengemudi">Data Pengemudi</button></a>
             </div>
         </div>
     </main>
